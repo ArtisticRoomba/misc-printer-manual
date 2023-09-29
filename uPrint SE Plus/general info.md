@@ -15,10 +15,22 @@ Proprietary printer software is required. You can also download maintenance soft
   - Allows direct communication to the printer's mainboard. **WARNING: This can damage the printer if you do not know what you are doing.**
 - Download MacaraEX
   - Basic troubleshooting and telmetery monitoring software
-### Installing and setting up GrabCAD
-- Install GrabCAD (requires admin rights)
+### Installing and setting up GrabCAD Print
+GrabCAD Print is Stratasys' proprietary slicer for all of their printers. While it is partially restrictive, it is not as bad as some other slicers as it at least preforms well.
+- Install GrabCAD Print (requires admin rights)
 - Sign in to your account. Contact the operator of the printer to be invited to the printer's Company (currently BOOMBA EXPLOSIVE CLEANING SOLUTIONS INCORPORATED).
 - >NOTE: Any person can print to the printer if they know the printer's IP address on the LAN. However, this requires direct interaction with the printer.
+-
+### Using GrabCAD
+[Later]
+### Installing and setting up TeraTerm
+TeraTerm is a console emulator that we will use to communicate and send commands to the printer's main control board via the diagnostic serial interface on the back of the printer.
+- Install TeraTerm
+- Acquire a serial to USB cable and connect the two devices together.
+- Open a new connection on the USB cable (usually `COM4`)
+- Open the serial port connection and change the link rate to `38500`.
+- Send a `gp` or `help` command to verify a connection with the printer has been made.
+- >If the printer is responding with absolute gibberish, there is a link error. It does that sometimes. We don't know why, sometimes it fixes itself, other times we try to reseat the serial connector.
 ## Printer maintenance and quirks
 It's reliability is unparalled compared to it's $16,000 price tag, requiring heavy maintenance and upkeep. It will have a hot streak of printing parts reliability and quickly, and then suffer from a critical error and require creative thinking to overcome. 
 
