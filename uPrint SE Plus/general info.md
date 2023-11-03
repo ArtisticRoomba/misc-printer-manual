@@ -20,7 +20,6 @@ GrabCAD Print is Stratasys' proprietary slicer for all of their printers. While 
 - Install GrabCAD Print (requires admin rights)
 - Sign in to your account. Contact the operator of the printer to be invited to the printer's Company (currently BOOMBA EXPLOSIVE CLEANING SOLUTIONS INCORPORATED).
 - >NOTE: Any person can print to the printer if they know the printer's IP address on the LAN. However, this requires direct interaction with the printer.
--
 ### Using GrabCAD
 [Later]
 ### Installing and setting up TeraTerm
@@ -29,8 +28,10 @@ TeraTerm is a console emulator that we will use to communicate and send commands
 - Acquire a serial to USB cable and connect the two devices together.
 - Open a new connection on the USB cable (usually `COM4`)
 - Open the serial port connection and change the link rate to `38500`.
-- Send a `gp` or `help` command to verify a connection with the printer has been made.
-- >If the printer is responding with absolute gibberish, there is a link error. It does that sometimes. We don't know why, sometimes it fixes itself, other times we try to reseat the serial connector.
+- Send a `gp` or `help` command to verify a connection with the printer has been made. The printer should respond with it's last post summary.
+>If the printer is responding with absolute gibberish, there is a link error. Reseat the USB and serial connector. Make sure to fully screw in the retaining screws on the serial connector. Keep reseating the connector if the Teraterm console keeps reporting jibberish.
+
+>The printer will automatically send POST information when it turns on, and exception logs when it encounters a reportable error.
 ## Printer maintenance and quirks
 It's reliability is unparalled compared to it's $16,000 price tag, requiring heavy maintenance and upkeep. It will have a hot streak of printing parts reliability and quickly, and then suffer from a critical error and require creative thinking to overcome. 
 
@@ -44,6 +45,7 @@ This printer suffers from a multitude of minor errors. Some of these errors are 
   - Filament missing the liquefier input and curling around the drive gear, making a makeshift spring and filling the interior print head with filament.
   - Filament missing the liquefier input and grinding against the drive gear, as it lacks the force to overcome the blockage in the liquefier.
     - To clear a blockage in the liquefier, go into `Maintenance` -> `Machine` -> `Head` and wait for the head to heat up. Then press `Blower Off` and keep pressing it a few times. This allows the liquefier to heat up beyond standard operating tempreatures and melts filament inside of it. Confirm blockage is clear and return to normal operation. Refer to the [Recovering from Loss of Extrusion] section of the maintenance manual.
+  - Filament so wet and ruined that it cannot heat up in the liquefier fast enough, clogging the liquefier, causing a LOE. This is only caused by a completely trashed filament roll, it is advisable to dispose of the roll.
   - Filament partially missing the liquefier input and splitting, with one half feeding into the liquefier and the other curling around the filament motor.
 - Minor errors caused by bad sclicing settings
   - Spaghettification of part caused by complex part geometry.
