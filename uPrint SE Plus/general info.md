@@ -45,7 +45,7 @@ This printer suffers from a multitude of minor errors. Some of these errors are 
   - Filament missing the liquefier input and curling around the drive gear, making a makeshift spring and filling the interior print head with filament.
   - Filament missing the liquefier input and grinding against the drive gear, as it lacks the force to overcome the blockage in the liquefier.
     - To clear a blockage in the liquefier, go into `Maintenance` -> `Machine` -> `Head` and wait for the head to heat up. Then press `Blower Off` and keep pressing it a few times. This allows the liquefier to heat up beyond standard operating tempreatures and melts filament inside of it. Confirm blockage is clear and return to normal operation. Refer to the [Recovering from Loss of Extrusion] section of the maintenance manual.
-  - Filament so wet and ruined that it cannot heat up in the liquefier fast enough, clogging the liquefier, causing a LOE. This is only caused by a completely trashed filament roll, it is advisable to dispose of the roll.
+  - Filament so wet and ruined that it cannot heat up in the liquefier fast enough, clogging the liquefier, causing a LOE. This is only caused by a completely trashed filament roll, and it is advisable to dispose of the roll.
   - Filament partially missing the liquefier input and splitting, with one half feeding into the liquefier and the other curling around the filament motor.
 - Minor errors caused by bad sclicing settings
   - Spaghettification of part caused by complex part geometry.
