@@ -63,5 +63,5 @@ Examples of major errors include:
   - This can be caused by a faulty Y axis sensor. This sensor can fail over time and start generating false positives. Clean the sensor using a q-tip and reseat the sensor cables as well as the main control board cables. If this does not work, replace the sensor.
 - `(14, 11)` Door opened while axis in motion
   - This error is caused while the machine detects that the door is open while an axis move is being preformed. Access to the insides of the printer during operation is considered illegal. Using the `dl` command to exeuctively control the door servo does not disable the illegal check.
-  - >NOTE: Be sure to return control of the door servo to the controller after using the `dl` command. See the Tera Term manual for more information.
+  - >NOTE: Be sure to return control of the door servo to the controller after using the `dl` command. See the TeraTerm manual for more information.
   - >There is a DIP switch that bypasses control of the door servo through the controller directly. This bypass may disable the illegal check, however it has not been tested. It is best to leave this in the Off position to recognize when the printer is about to move through door lock cues and to prevent the printer's movement during maintenance.
