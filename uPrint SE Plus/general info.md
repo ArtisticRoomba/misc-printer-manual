@@ -74,7 +74,7 @@ Major errors are errors that cause an exception in the printer's main control bo
 
 Examples of major errors include:
 - `(14, 08)` Unexpected contact with Y axis EOT sensor
-- This error is caused by the Y axis end of travel sensor tripping during operation when the printer did not expect the Y axis sensor to trip during the move.
+  - This error is caused by the Y axis end of travel sensor tripping during operation when the printer did not expect the Y axis sensor to trip during the move.
   - This can be caused by a faulty Y axis sensor. This sensor can fail over time and start generating false positives. Clean the sensor using a q-tip and reseat the sensor cables as well as the main control board cables. If this does not work, replace the sensor.
 - `(14, 11)` Door opened while axis in motion
   - This error is caused while the machine detects that the door is open while an axis move is being preformed. Access to the insides of the printer during operation is considered illegal. Using the `dl` command to exeuctively control the door servo does not disable the illegal check.
