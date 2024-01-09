@@ -1,0 +1,16 @@
+{
+  "botType": "sketch",
+  "extruders": "sketch_extruder",
+  "materials": "pla",
+  "name": "INT. SUG. TEST RAFT",
+  "printMode": "balanced",
+  "settings": {
+    "modelFillProfiles.sparse.pattern": "hexagonal",
+    "platformTemp": 60,
+    "raftModelShellsSpacing": 0.5,
+    "raftModelSpacing": 0.5,
+    "supportModelSpacing": 0.5
+  },
+  "source": "CloudPrint",
+  "version": "2.6.1"
+}
