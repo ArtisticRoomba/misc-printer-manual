@@ -42,7 +42,7 @@ Basic commands include:
 - `le` for the printer's exception log (error log).
 - `gp` for getting the printer's recent POST information.
 
-You can use TeraTerm to submit axis movement commands and to control head and chamber temps. Check the brief [TeraTerm Manual] as well as the `help` command for more info.
+You can use TeraTerm to submit axis movement commands and to control head and chamber temps. Check the brief TeraTerm section in the [manual](https://github.com/ArtisticRoomba/misc-printer-manual/blob/main/uPrint%20SE%20Plus/uPrint%20SE%20Plus%20Service%20Manual.pdf) as well as the `help` command for more info.
 
 **WARNING: While using axis move commands, the printer has no safeguards in place to prevent damage when moving the axises. Blind movements may cause the toolhead to collide with the frame, breaking fragile parts such as the head toggle bar or leveling sensor.**
 
@@ -60,7 +60,7 @@ This printer suffers from a multitude of minor errors. Some of these errors are 
   - Filament breaking in the roll and causing a filament break error. If it breaks beyond the filament runout sensor the printer will have an LOE and the part will fail.
   - Filament missing the liquefier input and curling around the drive gear, making a makeshift spring and filling the interior print head with filament.
   - Filament missing the liquefier input and grinding against the drive gear, as it lacks the force to overcome the blockage in the liquefier.
-    - To clear a blockage in the liquefier, go into `Maintenance` -> `Machine` -> `Head` and wait for the head to heat up. Then press `Blower Off` and keep pressing it a few times. This allows the liquefier to heat up beyond standard operating tempreatures and melts filament inside of it. Confirm blockage is clear and return to normal operation. Refer to the [Recovering from Loss of Extrusion] section of the maintenance manual.
+    - To clear a blockage in the liquefier, go into `Maintenance` -> `Machine` -> `Head` and wait for the head to heat up. Then press `Blower Off` and keep pressing it a few times. This allows the liquefier to heat up beyond standard operating tempreatures and melts filament inside of it. Confirm blockage is clear and return to normal operation. Refer to the [Recovering from Loss of Extrusion] section of the maintenance [manual](https://github.com/ArtisticRoomba/misc-printer-manual/blob/main/uPrint%20SE%20Plus/uPrint%20SE%20Plus%20Service%20Manual.pdf).
   - Filament so wet and ruined that it cannot heat up in the liquefier fast enough, clogging the liquefier, causing a LOE. This is only caused by a completely trashed filament roll, and it is advisable to dispose of the roll.
     - >The printer can detect blockages in the liquefier channel and pause printing. Printing can be resumed after clearing the blockage.
   - Filament partially missing the liquefier input and splitting, with one half feeding into the liquefier and the other curling around the filament motor.
@@ -70,9 +70,9 @@ This printer suffers from a multitude of minor errors. Some of these errors are 
   - Failure of small support structures causing deposition of support in model and spaghettification of the part.
     - On some parts, be sure to use the `SMART` support settings and the `Grow Small Supports` option under `Grow Supports`. This decreases the chance of the support failing. Supports can support themselves on the part in holes but some get knocked over very easily. This increases wear and support filament usage, however this option may be required on supports that have a high chance of being knocked over.
     - >NOTE: You cannot turn off supports, you can only decrease the angle at which the slicer will place supports. Turning down the support angle all the way is perfectly fine except on some parts.
-You can consult the Service Manual of this printer for more information on failure events and what to do during a Loss of Extrusion (LOE).
+You can consult the [Service Manual](https://github.com/ArtisticRoomba/misc-printer-manual/blob/main/uPrint%20SE%20Plus/uPrint%20SE%20Plus%20Service%20Manual.pdf) of this printer for more information on failure events and what to do during a Loss of Extrusion (LOE).
 ### Major errors
-Major errors are errors that cause an exception in the printer's main control board and subsequently abort printing. These errors are non-recoverable and require a manual `Continue` input issued on the control panel before the printer fully reboots. It is recommended to take note of the error code displayed `(xx, xx)` and look it up in the Printer Manual. You can also type `le` into Teraterm to review the printer's error and exception log. This is useful for troubleshooting persistent errors.
+Major errors are errors that cause an exception in the printer's main control board and subsequently abort printing. These errors are non-recoverable and require a manual `Continue` input issued on the control panel before the printer fully reboots. It is recommended to take note of the error code displayed `(xx, xx)` and look it up in the [Printer Manual](https://github.com/ArtisticRoomba/misc-printer-manual/blob/main/uPrint%20SE%20Plus/uPrint%20SE%20Plus%20Service%20Manual.pdf). You can also type `le` into Teraterm to review the printer's error and exception log. This is useful for troubleshooting persistent errors.
 
 Examples of major errors include:
 - `(14, 08)` Unexpected contact with Y axis EOT sensor
@@ -80,5 +80,5 @@ Examples of major errors include:
   - This can be caused by a faulty Y axis sensor. This sensor can fail over time and start generating false positives. Clean the sensor using a q-tip and reseat the sensor cables as well as the main control board cables. If this does not work, replace the sensor.
 - `(14, 11)` Door opened while axis in motion
   - This error is caused while the machine detects that the door is open while an axis move is being preformed. Access to the insides of the printer during operation is considered illegal. Using the `dl` command to exeuctively control the door servo does not disable the illegal check.
-  - >NOTE: Be sure to return control of the door servo to the controller after using the `dl` command. See the TeraTerm manual for more information.
+  - >NOTE: Be sure to return control of the door servo to the controller after using the `dl` command. See the TeraTerm [manual](https://github.com/ArtisticRoomba/misc-printer-manual/blob/main/uPrint%20SE%20Plus/uPrint%20SE%20Plus%20Service%20Manual.pdf) for more information.
   - >There is a DIP switch on the controller that bypasses control of the door servo through the controller directly. This bypass may disable the illegal check, however it has not been tested. It is best to leave this in the Off position, as door open/close conflicts are useful to prevent the printer from moving.
