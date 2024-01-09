@@ -19,7 +19,7 @@ The cloud slicer is actually pretty useful given basic job control can be done t
 Take care to read this section to it's fullest. It contains useful info in operating the printer.
 
 #### The CloudPrint Slicer
-- MakerBot's default settings are garbage. Download and import the tuned printing profile included in this repo.
+- MakerBot's default settings are garbage. Download [(Makerbot Sketch/INT. SUG. TEST RAFT.printmode)](https://github.com/ArtisticRoomba/misc-printer-manual/blob/main/Makerbot%20Sketch/INT.%20SUG.%20TEST%20RAFT.printmode) and import the tuned printing profile included in this repo.
   - Using default settings results in the part fusing to the raft.
   - Using default settings may cause the raft to seperate from the build plate.
 - Using a raft is required. The printer loses it's accuracy in determining the build plate's position quite easily, making it unable to print without a raft.
