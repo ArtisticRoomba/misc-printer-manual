@@ -10,7 +10,7 @@ The uPrint SE Plus by Stratasys (coined the $16,000 Paperweight by it's operator
 Proprietary printer software is required. You can also download maintenance software and server software.
 - Download GrabCAD Print (admin rights required, per machine installer)
 - Download GrabCAD Print Server
-  - Allows remote sending of parts and monitoring over the internet when on a different network. Offers notifications for print status and completions.
+  - Allows remote sending of parts and monitoring over the internet when on a different network. Enables notifications for print status and completions.
 - Download TeraTerm
   - Allows direct communication to the printer's mainboard. **WARNING: This can damage the printer if you do not know what you are doing.**
 - Download MacaraEX
@@ -19,7 +19,7 @@ Proprietary printer software is required. You can also download maintenance soft
 GrabCAD Print is Stratasys' proprietary slicer for all of their printers. While it is partially restrictive, it is not as bad as some other slicers as it at least preforms well.
 - Install GrabCAD Print (requires admin rights)
 - Sign in to your account. Contact the operator of the printer to be invited to the printer's Company (currently BOOMBA EXPLOSIVE CLEANING SOLUTIONS INCORPORATED).
-- >NOTE: Any person can print to the printer if they know the printer's IP address on the LAN. However, this requires direct interaction with the printer.
+- >NOTE: Any person can print to the printer if they know the printer's IP address on the LAN.
 ### Using GrabCAD
 GrabCAD is the proprietary slicing software Stratasys uses for all of their machines.
 
