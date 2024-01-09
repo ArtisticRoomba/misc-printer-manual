@@ -2,7 +2,7 @@
 ## Printer background
 The uPrint SE Plus by Stratasys (coined the $16,000 Paperweight by it's operators) is an industrial FDM 3D printer for professional workflows, offering high part strength and fast prototyping. This is because the extruder maintains a toasty 300°C and as such allows very nice layer adhesion.
 
->It is theorized that the unique high temperature requirements of the proprietary ABS that the printer uses can be used in other printers capable of achieving hotend temperatures of 300°C. Examples include the X1 Carbon FDM printer by Bambu Lab currently requested. Tests at 255°C yield poor layer adhesion and interesting part qualities. Tests at the 300°C range have yet to be preformed.
+>It is theorized that the unique high temperature requirements of the proprietary ABS that the printer uses can be used in other printers capable of achieving hotend temperatures of 300°C. Preliminary testing of the filament in other printers capable of yielding these tempreatures show good part quality and acceptable strength. More testing is advised.
 
 >The $16,000 Paperweight is the newest uPrint SE Plus in the district. The old printer was dropped by moving staff, and a replacement was ordered. It is confirmed that the $16,000 paperweight is the last uPrint SE Plus in the district.
 ## Getting started
@@ -21,7 +21,9 @@ GrabCAD Print is Stratasys' proprietary slicer for all of their printers. While 
 - Sign in to your account. Contact the operator of the printer to be invited to the printer's Company (currently BOOMBA EXPLOSIVE CLEANING SOLUTIONS INCORPORATED).
 - >NOTE: Any person can print to the printer if they know the printer's IP address on the LAN. However, this requires direct interaction with the printer.
 ### Using GrabCAD
-[Later]
+GrabCAD is the proprietary slicing software Stratasys uses for all of their machines.
+
+[Continue later]
 ### Installing and setting up TeraTerm
 TeraTerm is a console emulator that we will use to communicate and send commands to the printer's main control board via the diagnostic serial interface on the back of the printer.
 - Install TeraTerm
@@ -29,7 +31,7 @@ TeraTerm is a console emulator that we will use to communicate and send commands
 - Open a new connection on the USB cable (usually `COM4`)
 - Open the serial port connection and change the link rate to `38500`.
 - Send a `gp` or `help` command to verify a connection with the printer has been made. The printer should respond with it's last post summary.
->If the printer is responding with absolute gibberish, there is a link error. Reseat the USB and serial connector. Make sure to fully screw in the retaining screws on the serial connector. Keep reseating the connector if the Teraterm console keeps reporting jibberish.
+>If the printer is responding with absolute gibberish, there is a link error. Reseat the USB and serial connector. Make sure to fully screw in the retaining screws on the serial connector. Keep reseating the connector if the TeraTerm console keeps reporting jibberish.
 
 >The printer will automatically send POST information when it turns on, and exception logs when it encounters a reportable error.
 
